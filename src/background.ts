@@ -38,16 +38,24 @@ app.on("second-instance", () => {
   }
 });
 
+if (IS_MAC) {
+  app.on("activate", () => {
+    if (mainWindow) {
+      mainWindow.show();
+    }
+  });
+}
+
 if (!app.requestSingleInstanceLock()) {
   app.quit();
 }
 
-if (IS_WINDOWS) {
-  app.setAppUserModelId("pw.kmr.android-messages-desktop");
-  app.setAsDefaultProtocolClient("android-messages-desktop");
-}
-
 app.on("ready", () => {
+  if (IS_WINDOWS) {
+    app.setAppUserModelId("pw.kmr.android-messages-desktop");
+    app.setAsDefaultProtocolClient("android-messages-desktop");
+  }
+
   trayManager = new TrayManager();
 
   new MenuManager();
