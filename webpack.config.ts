@@ -8,6 +8,7 @@ const base: Configuration = {
   mode: process.env.NODE_ENV === "development" ? "development" : "production",
   externals: [nodeExternals()],
   devtool: "source-map",
+  appId: "pw.electron.android-messages",
   node: {
     __dirname: false,
     __filename: false,
