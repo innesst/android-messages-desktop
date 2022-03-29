@@ -31,4 +31,5 @@ module.exports = {
     allowToChangeInstallationDirectory: true,
     oneClick: false,
   },
+app.on('ready', () => app.setAppUserModelId("Android Messages"));
 };
