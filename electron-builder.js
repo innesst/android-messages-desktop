@@ -29,6 +29,7 @@ module.exports = {
   },
   nsis: {
     allowToChangeInstallationDirectory: true,
+    appId: "pw.electron.android-messages",
     oneClick: false,
   },
 };
