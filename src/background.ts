@@ -39,7 +39,7 @@ if (!app.requestSingleInstanceLock()) {
 }
 
 if (IS_WINDOWS) {
-//  app.setAppUserModelId("pw.kmr.android-messages-desktop");
+  app.setAppUserModelId("pw.kmr.android-messages-desktop");
   app.setAsDefaultProtocolClient("android-messages-desktop");
 }
 
@@ -161,7 +161,7 @@ app.on("ready", () => {
   );
 }); //onready
 
-app.on('ready', () => app.setAppUserModelId("Android Messages"));
+// app.on('ready', () => app.setAppUserModelId("Android Messages"));
 
 ipcMain.on("should-hide-notification-content", (event) => {
   event.returnValue = settings.hideNotificationContentEnabled.value;
