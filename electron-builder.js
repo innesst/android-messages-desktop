@@ -18,7 +18,7 @@ module.exports = {
   },
   win: {
 #    target: ["nsis", "portable"],
-#    target: ["nsis"],
+     target: ["nsis"],
   },
   mac: {
     category: "public.app-category.social-networking",
