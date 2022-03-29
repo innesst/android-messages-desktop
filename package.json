@@ -5,6 +5,9 @@
   "author": {
     "name": "Kyle Rosenberg",
     "email": "kyle@ekrosenberg.com"
+   "build": {
+      "appId": "pw.kmr.android-messages-desktop"
+      }
   },
   "license": "MIT",
   "copyright": "Copyright 2020 Kyle Rosenberg",
