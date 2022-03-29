@@ -1,7 +1,5 @@
-{
-  appId: "pw.electron.android-messages",
-},
-    
+appId: "pw.electron.android-messages",
+  
     module.exports = {
 //  appId: "pw.electron.android-messages",
   artifactName: "${productName}-v${version}-${os}-${arch}.${ext}",
