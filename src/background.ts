@@ -41,7 +41,7 @@ if (!app.requestSingleInstanceLock()) {
 if (IS_WINDOWS) {
 //  app.setAppUserModelId("pw.kmr.android-messages-desktop");
   app.setAsDefaultProtocolClient("android-messages-desktop");
-  app.on('ready', () => app.setAppUserModelId(Android Messages));
+  app.on('ready', () => app.setAppUserModelId("Android Messages"));
 }
 
 if (IS_MAC) {
